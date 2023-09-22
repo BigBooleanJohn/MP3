@@ -28,24 +28,6 @@ public class RightJustified implements TextBlock {
     }// width
 
     /*
-     * I wrote this function because in the textblocks, Strings have many
-     * space characters in them that make them longer than expected. this method
-     * returns the string that is made up of solely made up of alphabetic chars
-     */
-    public static String newString(String s) {
-        int i = 0;
-        if (s.contains(" ") == false) {
-            return s;
-        } else {
-            while (s.toCharArray()[i] != ' ') {
-                i++;
-            }
-            String NewS = s.substring(0, i - 1);
-            return NewS;
-        }
-    }
-
-    /*
      * RightJustifier is a method that refers to a RightJustified object, and based
      * on
      * the RightIndex field of the object, it will justify it to the right if the
